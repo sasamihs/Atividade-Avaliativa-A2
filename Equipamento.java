@@ -1,4 +1,4 @@
-import java.util.ArrayList; // Importa a estrutura de lista dinâmica para o histórico.
+mimport java.util.ArrayList; // Importa a estrutura de lista dinâmica para o histórico.
 import java.util.List; // Importa a interface para tipagem da coleção.
 
 public abstract class Equipamento {
@@ -62,7 +62,7 @@ class Raquete extends Equipamento {
     }
 }
 
-// Subclasse especializada em veículos de locomoção que exigem vistorias mecânicas no retorno.
+// Subclasse especializada em equipamentos que exigem vistorias especificas no retorno.
 class Bicicleta extends Equipamento {
     public Bicicleta(int id, String nome) {
         super(id, nome); // Invoca a lógica de inicialização de atributos da superclasse.

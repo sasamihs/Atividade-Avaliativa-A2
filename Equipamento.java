@@ -21,7 +21,7 @@ public abstract class Equipamento {
     public String getNome() { return nome; } // Retorna a descrição do equipamento.
     public boolean isDisponivel() { return disponivel; } // Retorna true se livre ou false se já emprestado.
     public void setDisponivel(boolean disponivel) { this.disponivel = disponivel; } // Permite alterar a disponibilidade do item.
-    public List<String> getHistorico() { return historico; } // Dá acesso à lista completa de logs do equipamento.
+    public List<String> getHistorico() { return historico; } // Dá acesso à lista completa de historico do equipamento.
 
     // Adiciona uma nova linha de texto descritiva diretamente no histórico deste equipamento específico.
     public void adicionarAoHistorico(String registro) {
@@ -32,7 +32,7 @@ public abstract class Equipamento {
     public abstract int getPrazoDias();
 }
 
-// Subclasse especializada em itens simples de uso imediato no complexo esportivo.
+// Subclasse especifica para bolas e coletes.
 class EquipamentoComum extends Equipamento { // Representa Bolas e Coletes do almoxarifado.
     public EquipamentoComum(int id, String nome) {
         super(id, nome); // Repassa os valores recebidos para o construtor da classe base (Equipamento).
@@ -47,7 +47,7 @@ class EquipamentoComum extends Equipamento { // Representa Bolas e Coletes do al
     }
 }
 
-// Subclasse especializada em equipamentos de quadras de raquete (Tênis, Badminton, etc.).
+// Subclasse especifica para raquetes.
 class Raquete extends Equipamento {
     public Raquete(int id, String nome) {
         super(id, nome); // Aciona o construtor original herdado.
@@ -62,7 +62,7 @@ class Raquete extends Equipamento {
     }
 }
 
-// Subclasse especializada em equipamentos que exigem vistorias especificas no retorno.
+// Subclasse especifica para bicicleta.
 class Bicicleta extends Equipamento {
     public Bicicleta(int id, String nome) {
         super(id, nome); // Invoca a lógica de inicialização de atributos da superclasse.

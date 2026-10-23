@@ -1,4 +1,4 @@
-import java.time.LocalDate; // Importa a API de manipulação de datas do Java.
+import java.time.LocalDate;
 
 public class Emprestimo {
     // Declara os atributos que armazenam as referências dos objetos envolvidos e as datas de controle.

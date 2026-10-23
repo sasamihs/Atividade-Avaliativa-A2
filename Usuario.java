@@ -5,7 +5,7 @@ import java.util.List; // Importa o contrato estrutural de coleções.
 public abstract class Usuario {
     // Atributos encapsulados para armazenamento seguro das informações individuais dos usuários.
     private String nome; // Armazena o nome civil do estudante ou do colaborador.
-    private String RA; // Funciona como chave única de identificação (Matrícula acadêmica ou SIAPE funcional).
+    private String RA; // Funciona como chave única de identificação.
     private List<Equipamento> itensEmprestados; // Lista contendo as instâncias de equipamentos sob posse atual do usuário.
     private LocalDate bloqueadoAte; // Guarda o teto temporal da penalidade caso o usuário atrase entregas.
 

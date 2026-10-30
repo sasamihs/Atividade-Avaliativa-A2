@@ -1,4 +1,4 @@
-mimport java.util.ArrayList; // Importa a estrutura de lista dinâmica para o histórico.
+import java.util.ArrayList; // Importa a estrutura de lista dinâmica para o histórico.
 import java.util.List; // Importa a interface para tipagem da coleção.
 
 public abstract class Equipamento {
